@@ -1,18 +1,17 @@
 import React from 'react'
-import Background from '../components/Background'
-import Logo from '../components/Logo'
-import Header from '../components/Header'
-import Paragraph from '../components/Paragraph'
-import Button from '../components/Button'
+import Background from '../components/Background' // Background 컴포넌트 import
+import Logo from '../components/Logo' // Logo 컴포넌트 import
+import Header from '../components/Header' // Header 컴포넌트 import
+import Paragraph from '../components/Paragraph' // Paragraph 컴포넌트 import
+import Button from '../components/Button' // Button 컴포넌트 import
 
 export default function Dashboard({ navigation }) {
   return (
     <Background>
       <Logo />
-      <Header>Let’s start</Header>
+      <Header>반가워요!</Header>
       <Paragraph>
-        Your amazing app starts here. Open you favorite code editor and start
-        editing this project.
+      🌷친환경을 위해 노력하는 당신 축복해요🌷
       </Paragraph>
       <Button
         mode="outlined"

@@ -12,7 +12,9 @@ import {
 } from './src/screens'
 
 const Stack = createStackNavigator()
-
+// react-native-paper의 Provider 컴포넌트로 전체 앱을 감싼다.
+// NavigationContainer를 이용하여 네비게이션을 적용한다.
+// createStackNavigator로 스크린을 스택으로 쌓는다.
 export default function App() {
   return (
     <Provider theme={theme}>

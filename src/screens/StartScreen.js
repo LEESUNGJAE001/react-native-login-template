@@ -9,21 +9,22 @@ export default function StartScreen({ navigation }) {
   return (
     <Background>
       <Logo />
-      <Header>Login Template</Header>
-      <Paragraph>
-        The easiest way to start with your amazing application.
+
+      <Header style={{ color: '#009966', fontSize: 22, marginTop: 10 }}>로그인</Header>
+      <Paragraph style={{ marginBottom: 10, marginTop: 10 }}>
+      🌷친환경을 위해 노력하는 당신, 축복해요🌷
       </Paragraph>
       <Button
-        mode="contained"
+        mode="contained" color="#009966"
         onPress={() => navigation.navigate('LoginScreen')}
       >
-        Login
+        로그인
       </Button>
       <Button
-        mode="outlined"
+        mode="outlined" color="#009966"
         onPress={() => navigation.navigate('RegisterScreen')}
       >
-        Sign Up
+        회원가입
       </Button>
     </Background>
   )

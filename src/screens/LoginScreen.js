@@ -1,3 +1,4 @@
+//React와 React와 Native의 컴포넌트 및 사용할 파일들을 가져옵니다.
 import React, { useState } from 'react'
 import { TouchableOpacity, StyleSheet, View } from 'react-native'
 import { Text } from 'react-native-paper'
@@ -33,7 +34,7 @@ export default function LoginScreen({ navigation }) {
     <Background>
       <BackButton goBack={navigation.goBack} />
       <Logo />
-      <Header>Welcome back.</Header>
+      <Header style={{ color: '#009966', fontSize: 22, marginTop: 10 }}>환영합니다!</Header>
       <TextInput
         label="Email"
         returnKeyType="next"
@@ -59,16 +60,16 @@ export default function LoginScreen({ navigation }) {
         <TouchableOpacity
           onPress={() => navigation.navigate('ResetPasswordScreen')}
         >
-          <Text style={styles.forgot}>Forgot your password?</Text>
+          <Text style={styles.forgot}>비밀번호 찾기</Text>
         </TouchableOpacity>
       </View>
-      <Button mode="contained" onPress={onLoginPressed}>
-        Login
+      <Button mode="contained" color="#009966" onPress={onLoginPressed}>
+        로그인
       </Button>
       <View style={styles.row}>
-        <Text>Don’t have an account? </Text>
+        <Text>계정이 없으신가요?  </Text>
         <TouchableOpacity onPress={() => navigation.replace('RegisterScreen')}>
-          <Text style={styles.link}>Sign up</Text>
+          <Text style={styles.link}>회원가입</Text>
         </TouchableOpacity>
       </View>
     </Background>
